@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <header>
+    <title>Assignment 10 Forms</title>
+   </header>
+  <body>
+      <script>
+      function check(){
+        document.getElementById("h3").value=parseInt(document.getElementById("h1").value)+parseInt(document.getElementById("h2").value);
+      }
+      function change(){
+        var option=document.getElementById("select").selectedIndex;
+        document.getElementById("b2").src=document.getElementById("select").options[option].value;
+      }
+      function genderx(){
+        if(document.getElementById("radio1").checked){
+          document.getElementById("b1").src="b6.jpg";
+        }else if(document.getElementById("radio2").checked){
+          document.getElementById("b1").src="b2.jpg";
+        }
+      }
+    </script>
+    <form>
+      <label for="h1">Number 1:</label>
+      <input type="text" name="number1" id="h1"/>
+      <br>
+      <label for="h2">Number 2:</label>
+      <input type="text" name="number2" id="h2" onblur="check()"/>
+      <br>
+      <label for="h3">Answer:</label>
+      <input type="text" name="answer" id="h3"/>
+      <br>
+      <input type="radio" name="gender" id="radio1">Male</input>
+      <input type="radio" name="gender" id="radio2">Female</input>
+      <br>
+      <select id="select" onchange="change()">
+        <option value="b3.jpg">Mr.Bean</option>
+        <option value="b4.jpg">Mr.Bean2</option>
+        <option value="b5.jpg">Mr.Bean3</option>
+      </select>
+      <br>
+      <image id="b1"/>
+      <image id="b2"/>
+      <br>
+      <p >Message: </p>
+      <br>
+      <input type="button" name="reset" id="button1" value="Action=Reset"></input>
+      <input type="button" name="none" id="button2" onclick="genderx()" value="Action=None"></input>
+    </form>
+       <style>
+      img{
+        width: 25%;
+      }
+    </style>
+  <a style="text-decoration:none" href="page10.html"><h1>-------> Assignment 10 Forms</h1>
+  <a style="text-decoration:none" href="page11.html"><h1>-------> Assignment 11 Cookies</h1>
+  </body>
+
+
+
+</html>

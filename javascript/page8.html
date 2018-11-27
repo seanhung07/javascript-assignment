@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Assignment 8 DOM</title>
+</head>
+    <script>
+      function c(){
+        window.history.back();
+      }
+      function k(){
+        var arr=document.getElementsByTagName("img");
+        console.log(arr);
+        for(var i=0; i<arr.length; i++){
+          arr[i].style.width="50px";
+        }
+        arr[arr.length-1].style.opacity=0;
+        document.getElementById("it").innerHTML="NO NO NO NO NO";
+      }
+      function h(){
+        alert("width" + screen.width + "\nheight: " + screen.height);
+        alert("url: "+window.location.href);
+      }
+      function e(){
+        document.getElementById("bean").innerHTML='<img src="b5.jpg"/>';
+        document.getElementById("check").innerHTML="hahahahahaha";
+      }
+    </script>
+    <style>
+      img{
+        width: 50%;
+      }
+      table{
+        width:100%
+      }
+      td{
+        width:25%;
+      }
+    </style>
+
+  <body>
+    <table>
+      <tr>
+        <td><img src="b1.jpg" onclick="c()"/></td>
+        <td><img src="b2.jpg" onclick="h()"/></td>
+        <td id="bean"><img src="b3.jpg" onclick="e()"/></td>
+        <td><img src="b4.jpg" onclick="k()"/></td>
+      </tr>
+      <tr>
+        <td>MR.BEAN</td>
+        <td>HEY boiiii</td>
+        <td id="check">Check it</td>
+        <td id="it">Niceeeee</td>
+      </tr>
+    </table>
+  <a style="text-decoration:none" href="page8.html"><h1>-------> Assignment 8 DOM</h1>
+  <a style="text-decoration:none" href="page9.html"><h1>-------> Assignment 9 Pet Rock</h1>
+  </body>
+
+
+
+</html>

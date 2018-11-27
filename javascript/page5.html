@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Assignment 5 Function</title>
+	<script>
+		
+		function click(){ 
+		var price=30;
+   		var a= prompt("How many cokes and mars bars you want"); 
+   		var b= prompt("How many cokes and mars bars you want");
+   		var num1=parseInt(a);
+ 		var num2=parseInt(b);
+ 		alert("Total cost: "+(num1+num2)*price)
+   		}
+   		window.onload=function(){
+   			document.getElementById("pic").onclick=click;
+   		}
+	</script>
+</head>
+<body>
+	<img id="pic" src="https://www.telegraph.co.uk/content/dam/films/2017/03/20/bean_trans_NvBQzQNjv4BqFNieKJvd-mi0anfcfhLYGg39oWbqNtszRryLrO6EuiQ.png?imwidth=450" onclick="click()" style="width:200%;max-width:900px">
+		<a style="text-decoration:none" href="page5.html"><h1>-------> Assignment 5 Function</h1>
+		<a style="text-decoration:none" href="page6.html"><h1>-------> Assignment 6 Math function</h1>
+</body>
+</html>

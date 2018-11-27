@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Assignment 3 If Statement</title>
+</head>
+<body>
+	<script>
+		var x = prompt("Enter a Value 1" );
+ 		var y = prompt("Enter a Value 2");
+ 		var num1=parseInt(x);
+ 		var num2=parseInt(y);
+ 		if((num1+num2)<0){
+ 			alert("number is too low! ");
+ 		}else if((num1+num2)>100){
+ 			alert("number is too high");
+ 		}else if((num1+num2)>86 && (num1+num2)<100){
+ 			alert("great mark");
+ 		}else if((num1+num2)==50 ||(num1+num2)==60||(num1+num2)==67){
+ 			alert("just on the edge");
+ 		}
+ 		var r = confirm("Is the total really "+(num1+num2));
+		if (r == true) {
+   			 alert("Math confirmed");
+		} else {
+   			 alert("Math Incorrect");
+		}
+
+	</script>
+		<a style="text-decoration:none" href="page3.html"><h1>-------> Assignment 3 If statement</h1>
+		<a style="text-decoration:none" href="page4.html"><h1>-------> Assignment 4 Loops</h1>
+</body>
+</html>
